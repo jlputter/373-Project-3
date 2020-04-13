@@ -9,7 +9,7 @@ public class quarterDiscount extends discountObserver{
 
 	   @Override
 	   public void calculateDiscount() {
-	      System.out.println( "Half discount = : " + ( discountState.getPrice() / 4 ) ); 
+	      System.out.println( "Quarter discount = : " + ( discountState.getPrice() / 4 ) ); 
 	   }
 	}
 

@@ -19,7 +19,7 @@ public class discountState {
 
 	public void setPrice(double price) {
       this.price = price;
-      notifyAllObservers();
+      updateStateForObserver();
    }
 
 	//add to list of observable classes passed into observer to be used in client
@@ -28,7 +28,7 @@ public class discountState {
    }
 
    //used to update the observer with state change depending on concrete class
-	public void notifyAllObservers(){
+	public void updateStateForObserver(){
 		for (discountObserver observer : observers) {
 			observer.calculateDiscount();
       }
